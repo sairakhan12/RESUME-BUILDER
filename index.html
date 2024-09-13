@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Resume</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background video -->
+  <video autoplay muted loop id="background-video">
+    <source src="your-video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <main class="container" role="main">
+    <!-- Personal Information Section -->
+    <section class="personal-info" aria-labelledby="personal-info-heading">
+      <header>
+        <img src="profile.jfif" alt="Profile Picture of Saira Khan" class="profile-pic">
+        <h1 id="personal-info-heading">Saira Khan</h1>
+        <p>Contact: <a href="mailto:sairaskhan10@gmail.com">sairaskhan10@gmail.com</a></p>
+        <p>Phone: <a href="tel:+923462374287">0346-2374287</a></p>
+      </header>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <ul>
+        <li>High School Diploma - ABC School (2014-2018)</li>
+      </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills hidden" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul>
+        <li>JavaScript, TypeScript, HTML, CSS</li>
+      </ul>
+    </section>
+
+    <!-- Button to Show/Hide Skills -->
+    <div class="toggle-button">
+      <button id="toggleSkills" aria-controls="skills" aria-expanded="false">Show Skills</button>
+    </div>
+
+    <!-- Work Experience Section -->
+    <section class="work-experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Work Experience</h2>
+      <ul>
+        <li>Teaching (2022-2023)</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
